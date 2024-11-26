@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+}
+
+.map-frame {
+  height: 100%;
+}
+
+:host ::ng-deep #map > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-shadow-pane {
+  display: none;
+}
+
+#map {
+  height: 100%;
+}

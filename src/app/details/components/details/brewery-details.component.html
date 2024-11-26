@@ -1,0 +1,28 @@
+<ng-container *transloco="let t">
+  <div class="card" [class.loading]="loading">
+    @if (!!details) {
+      <h2 class="card__title"> {{ details.name }}</h2>
+      <p>{{ t('filters.country') }}: {{ t(getCountryTranslationString(details.country)) }}</p>
+      <p>{{ t('filters.type') }}: {{ t(getTypeTranslationString(details.brewery_type)) }}</p>
+      @if (details.phone) {
+        <p>{{ t('details.phone') }}: {{ details.phone}}</p>
+      }
+      @if (details.street) {
+        <p>{{ t('details.address') }}: {{ details.street }}</p>
+      }
+      @if (details.website_url) {
+        <span>{{ t('details.website') }}: <a [href]="details.website_url">{{ details.website_url}}</a></span>
+      }
+      @if (details.latitude && details.longitude) {
+        <div class="card__map">
+          <app-map
+            [latitude]="details.latitude"
+            [longitude]="details.longitude"
+            [popUpTitle]="details.name"
+            [popUpMessage]="details.street ?? ''"
+          ></app-map>
+        </div>
+      }
+    }
+  </div>
+</ng-container>

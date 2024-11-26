@@ -1,0 +1,48 @@
+{
+  "header": {
+    "search": "Поиск",
+    "random": "Случайная пивоварня"
+  },
+  "filters": {
+    "apply": "Применить",
+    "reset": "Сбросить",
+    "name": "Название",
+    "country": "Страна",
+    "type": "Тип",
+    "found": "Найдено: ",
+    "countries": {
+      "austria": "Австрия",
+      "england": "Англия",
+      "france": "Франция",
+      "isle_of_man": "Остров Мэн",
+      "ireland": "Ирландия",
+      "poland": "Польша",
+      "portugal": "Португалия",
+      "scotland": "Шотландия",
+      "singapore": "Сингапур",
+      "south_korea": "Южная Kорея",
+      "united_states": "США"
+    },
+    "types": {
+      "micro": "Микро",
+      "nano": "Нано",
+      "regional": "Региональная",
+      "brewpub": "При пабе",
+      "large": "Крупная",
+      "planning": "Скоро откроется",
+      "bar": "Бар",
+      "contract": "Собственник",
+      "proprietor": "Инкубатор",
+      "closed": "Закрытая"
+    }
+  },
+  "details": {
+    "phone": "Телефон",
+    "location": "Локация",
+    "website": "Веб-сайт",
+    "address": "Адрес"
+  },
+  "fetchBreweriesErrorTitle": "Не удалось получить список пивоварен",
+  "fetchBreweryDetailsErrorTitle": "Не удалось получить данные о пивоварне",
+  "notFound": "Страница не найдена"
+}

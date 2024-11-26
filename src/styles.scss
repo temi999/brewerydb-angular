@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+::ng-deep * {
+  padding: 0;
+  margin: 0;
+}
+
+::ng-deep body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+  height: 100%;
+  background-color: #121212;
+}
+
+::ng-deep html {
+  overflow: hidden;
+  height: 100%;
+}
+
+::ng-deep code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

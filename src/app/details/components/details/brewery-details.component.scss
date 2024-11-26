@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+
+  &.loading {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    align-self: center;
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 650px) {
+    &__map {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 651px) and (max-width: 900px) {
+    &__map {
+      padding: 30px;
+    }
+  }
+}

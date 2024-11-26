@@ -1,0 +1,44 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  padding: 20px;
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+
+    &__select {
+      min-width: 150px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 780px) {
+  .filters {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    padding: 20px;
+
+    &__controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &__select {
+        min-width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 900px) {
+  nz-content {
+    padding: 0 30px;
+  }
+}

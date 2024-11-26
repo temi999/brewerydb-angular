@@ -1,0 +1,27 @@
+<ng-container *transloco="let t">
+  <div class="container">
+    <div class="filters">
+      <app-filters
+        (filterChanged)="onFilterChange($event)"
+      ></app-filters>
+    </div>
+    @if (!loading) {
+      <div class="content">
+        <span class="content__count">{{ t('filters.found') }}{{ total }}</span>
+        <app-list [data]="breweries"></app-list>
+      </div>
+    } @else {
+      <div class="spin">
+        <nz-spin nzSimple nzSize="large"></nz-spin>
+      </div>
+    }
+    <div class="pagination">
+      <app-pagination
+        [page]="page"
+        [pageSize]="pageSize"
+        [total]="total"
+        (pageChanged)="onPageChange($event)"
+      ></app-pagination>
+    </div>
+  </div>
+</ng-container>

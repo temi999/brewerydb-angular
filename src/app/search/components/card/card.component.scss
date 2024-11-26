@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  height: 100%;
+
+  &:hover {
+    background-color: #383737;
+    cursor: pointer;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &__title {
+      color: #fefefe;
+      margin: 0;
+    }
+
+    &__icons {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      height: 100%;
+
+      span {
+        font-size: 18px;
+        cursor: auto;
+      }
+    }
+  }
+
+  &__address {
+    color: #a9a9a9;
+    margin-top: 10px;
+
+    &__city {
+      color: #a9a9a9;
+      margin-top: 10px;
+    }
+  }
+}

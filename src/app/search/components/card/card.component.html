@@ -1,0 +1,21 @@
+
+<ng-container *transloco="let t">
+  <div class="card" [routerLink]="['/breweries', details.id]">
+    <div class="card__header">
+      <h3 class="card__header__title"> {{ details.name }} ({{ t(getTypeTranslationString(details.brewery_type)) }})</h3>
+      <div class="card__header__icons">
+        @if (details.latitude && details.longitude) {
+          <span nz-icon nzType="environment" nzTheme="outline" [nz-tooltip]="t('details.location')" nzTooltipPlacement="top"></span>
+        }
+        @if (details.website_url) {
+          <span nz-icon nzType="global" nzTheme="outline" [nz-tooltip]="t('details.website')" nzTooltipPlacement="top"></span>
+        }
+        @if (details.phone) {
+          <span nz-icon nzType="phone" nzTheme="outline" [nz-tooltip]="t('details.phone')" nzTooltipPlacement="top"></span>
+        }
+      </div>
+    </div>
+    <span class="card__address"> {{ details.street ?? '...' }}</span>
+    <span class="card__address__city"> {{ details.city }}, {{ t(getCountryTranslationString(details.country)) }}</span>
+  </div>
+</ng-container>

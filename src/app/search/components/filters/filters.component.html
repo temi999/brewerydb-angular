@@ -1,0 +1,41 @@
+<ng-container *transloco="let t">
+  <div class="filters">
+    <nz-input-group class="filters__controls" [formGroup]="formGroup">
+      <input nz-input [placeholder]="t('filters.name')" formControlName="by_name" />
+  
+      <nz-select class="filters__controls__select" formControlName="by_country"
+        nzAllowClear
+        [nzPlaceHolder]="t('filters.country')"
+      >
+        <nz-option [nzLabel]="t('filters.countries.austria')" [nzValue]="'Austria'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.england')" [nzValue]="'England'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.france')" [nzValue]="'France'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.isle_of_man')" [nzValue]="'Isle of Man'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.ireland')" [nzValue]="'Ireland'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.poland')" [nzValue]="'Poland'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.portugal')" [nzValue]="'Portugal'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.scotland')" [nzValue]="'Scotland'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.singapore')" [nzValue]="'Singapore'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.south_korea')" [nzValue]="'South Korea'"></nz-option>
+        <nz-option [nzLabel]="t('filters.countries.united_states')" [nzValue]="'United States'"></nz-option>
+      </nz-select>
+  
+      <nz-select class="filters__controls__select" formControlName="by_type"
+        nzAllowClear
+        [nzPlaceHolder]="t('filters.type')"
+      >
+        <nz-option [nzLabel]="t('filters.types.micro')" [nzValue]="'micro'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.nano')" [nzValue]="'nano'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.regional')" [nzValue]="'regional'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.brewpub')" [nzValue]="'brewpub'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.planning')" [nzValue]="'planning'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.contract')" [nzValue]="'contract'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.proprietor')" [nzValue]="'proprietor'"></nz-option>
+        <nz-option [nzLabel]="t('filters.types.closed')" [nzValue]="'closed'"></nz-option>
+      </nz-select>
+  
+      <button nz-button (click)="filterChanged.emit(formGroup.getRawValue())">{{ t('filters.apply') }}</button>
+      <button nz-button (click)="resetFilter()">{{ t('filters.reset') }}</button>
+    </nz-input-group>
+  </div>
+</ng-container>

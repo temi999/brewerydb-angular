@@ -1,0 +1,48 @@
+{
+  "header": {
+    "search": "Search",
+    "random": "Random brewery"
+  },
+  "filters": {
+    "apply": "Apply",
+    "reset": "Reset",
+    "name": "Name",
+    "country": "Country",
+    "type": "Type",
+    "found": "Found: ",
+    "countries": {
+      "austria": "Austria",
+      "england": "England",
+      "france": "France",
+      "isle_of_man": "Isle of Man",
+      "ireland": "Ireland",
+      "poland": "Poland",
+      "portugal": "Portugal",
+      "scotland": "Scotland",
+      "singapore": "Singapore",
+      "south_korea": "South Korea",
+      "united_states": "United States"
+    },
+    "types": {
+      "micro": "Micro",
+      "nano": "Nano",
+      "regional": "Regional",
+      "brewpub": "Brewpub",
+      "large": "Large",
+      "planning": "Planning",
+      "bar": "Bar",
+      "contract": "Contract",
+      "proprietor": "Proprietor",
+      "closed": "Closed"
+    }
+  },
+  "details": {
+    "phone": "Phone",
+    "location": "Location",
+    "website": "Website",
+    "address": "Address"
+  },
+  "fetchBreweriesErrorTitle": "Failed to fetch breweries",
+  "fetchBreweryDetailsErrorTitle": "Failed to fetch brewery details",
+  "notFound": "Page not found"
+}
